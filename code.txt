@@ -1,0 +1,28 @@
+  java.sql.Connection Con = null;
+    PreparedStatement pst = null;
+    ResultSet Rs = null;
+    Statement St = null;
+
+
+if(PNameTb.getText().isEmpty() || PassNumTb.getText().isEmpty() || PAddressTb.getText().isEmpty() || PPhoneTb.getText().isEmpty())
+        {
+            JOptionPane.showMessageDialog(this, "Thông tin bị thiếu");
+        }else{
+            try {
+                //Class.forName("org.mysql.JDBC");
+                Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/quanlyhangkhong","root","");
+                PreparedStatement Add = Con.prepareStatement("insert into PassengersTbl(?,?,?,?,?,?,?,?,?)");
+                Add.setInt(1, 1);
+                Add.setString(2, PNameTb.getText());
+                Add.setString(3, NatCb.getSelectedItem().toString());
+                Add.setString(4, GenCb.getSelectedItem().toString());
+                Add.setString(5, PassNumTb.getText());
+                Add.setString(6, PAddressTb.getText());
+                Add.setString(7, PPhoneTb.getText());
+                int row = Add.executeUpdate();
+                JOptionPane.showMessageDialog(this, "Đã thêm hành khách thành ");
+                Con.close();
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, e);
+            }
+        }

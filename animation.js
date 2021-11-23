@@ -215,3 +215,14 @@ window.addEventListener('mouseup', function(event) {
     }
 });
 
+let like = [...document.getElementsByClassName('like')]
+let faThumpsUp = [...document.getElementsByClassName('fa-thumbs-up')]
+like.forEach((item, index) => {
+    item.onclick = function() {
+        item.style.color = '#1877f2';
+        faThumpsUp[index].style.animation = 'like 0.4s linear alternate'
+    }
+})
+
+
+

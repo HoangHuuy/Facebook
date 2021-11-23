@@ -1,0 +1,479 @@
+main {
+    padding-top: 16px;
+}
+
+main .center {
+    width: 680px;
+    /* background-color: rgb(133, 133, 133); */
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.block-item {
+    padding: 8px 0 24px 0;
+    display: flex;  
+    position: relative;
+}
+
+.block-item .story {
+    display: block;
+    width: 112px;
+    height: 198px;
+    margin: 0 4px 0 4px;
+    border-radius: 13px;
+    position: relative;
+    overflow: hidden;
+}
+
+.block-item .story .story-my-image {
+    height: 149px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.block-item .story .story-create {
+    height: 49px;
+    background-color: white;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border: 1px solid #d1d8e0;
+    border-top: none;
+}
+
+.block-item .story .story-create .plus{
+    position: absolute;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    border: 4px solid white;
+    background-color: #1877f2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-item .story .story-create .plus .fa-plus {
+    color: white;
+}
+
+.block-item .story .story-create-text {
+    position: absolute;
+    bottom: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.block-item .story .story-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 112px;
+    border-radius: 13px;
+    height: 198px;
+}
+
+.block-item .story .story-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+}
+
+.block-item .story .story-avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.block-item .story .story-avatar .story-avatar-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid #1877f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.block-item .story .story-person-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+}
+
+.block-item .story .story-person-name .text {
+    max-height: 38px;
+    width: 100%;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.story:hover {
+    opacity: 0.8;
+}
+
+.story:hover .story-image, .story:hover .story-my-image {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.block-item .more-story {
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    right: -20px;
+    top: 80px;
+    border: 1px solid #a7a7a7;
+}
+
+.block-item .more-story a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.block-item .more-story:hover {
+    background-color: #e9e9e9;
+}
+
+.block-item .more-story .nav-title {
+    white-space: nowrap;
+    width: auto;
+    top: 40px;
+    font-size: 13px;
+    right: -33px;
+}
+
+.block-item .more-story:hover .nav-title {
+    display: block;
+    animation: fadeIn 0.3s 1 linear forwards;
+}
+
+.newsfeed {
+    width: 500px;
+}
+
+.newsfeed .post {
+    margin-bottom: 16px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 13px;
+}
+
+.newsfeed .new-post {
+    padding: 12px 16px 10px 16px;
+}
+
+.newsfeed .new-post .upper-part {
+    display: flex;
+}
+
+.newsfeed .new-post .upper-part .avatar {
+    padding-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsfeed .new-post .upper-part .avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.newsfeed .new-post .upper-part .avatar img:hover {
+    opacity: 0.8;
+}
+
+.newsfeed .new-post .upper-part .post-input input{
+    width: 420px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(198deg 4% 95%);
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+.newsfeed .new-post .lower-part {
+    display: flex;
+    padding-top: 8px;
+    margin-top: 12px;
+    border-top: 1px solid hsl(0deg 0% 87%);
+    width: 468px;
+    overflow-x: hidden;
+}
+
+.newsfeed .new-post .lower-part .livestream {
+    width: 151px;
+}
+
+.newsfeed .new-post .lower-part .img-video {
+    width: 131px;
+}
+
+.newsfeed .new-post .lower-part .emos {
+    width: 186px;
+}
+
+.newsfeed .new-post .lower-part .means-of-post a {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.newsfeed .new-post .lower-part .means-of-post a:hover {
+    background-color: hsl(198deg 4% 95%);
+}
+
+.newsfeed .new-post .lower-part .means-of-post img {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+}
+
+.newsfeed .new-post .lower-part .means-of-post span {
+    font-size: 14px;
+}
+
+/*  */
+.newsfeed .watch-post .hint-part {
+    padding: 0 16px;
+}
+
+.newsfeed .watch-post .hint-part .hint-text {
+    padding: 12px 0;
+    border-bottom: 1px solid hsl(198deg 8% 74%);
+    font-size: 15px;
+    color: #5a5a5a;
+}
+
+.newsfeed .watch-post .upper-part {
+    display: flex;
+    padding: 12px 16px 0 16px;
+}
+
+.newsfeed .watch-post .upper-part .avatar {
+    padding-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsfeed .watch-post .upper-part .avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.newsfeed .watch-post .upper-part .avatar img:hover {
+    opacity: 0.8;
+}
+
+.newsfeed .watch-post .upper-part .infor{
+    width: 420px;
+    height: 40px;
+}
+
+.newsfeed .watch-post .upper-part .infor a:hover {
+    text-decoration: underline;
+}
+
+.newsfeed .watch-post .upper-part .infor .other {
+    display: flex;
+    align-items: center;
+}
+
+.newsfeed .watch-post .upper-part .infor .name {
+    font-size: 15px;
+    font-weight: 600;
+}
+.newsfeed .watch-post .upper-part .infor .time a{
+    font-size: 13px;
+    font-weight: 600;
+    color: #5a5a5a;
+}
+
+.newsfeed .watch-post .upper-part .infor .type-of-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsfeed .watch-post .upper-part .infor .type-of-post img {
+    width: 12px;
+}
+
+.newsfeed .watch-post .text-part {
+    width: 100%;
+    padding: 4px 16px 16px 16px;
+    font-size: 15px;
+}
+
+.newsfeed .watch-post .img-part {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(209, 209, 209, 0.685);
+    border-bottom: 1px solid rgb(209, 209, 209, 0.685);
+}
+
+.newsfeed .watch-post .img-part img {
+    width: 100%;
+}
+
+.newsfeed .watch-post .img-part video {
+    width: 100%;
+}
+
+.newsfeed .watch-post .react-part {
+    padding: 0 16px 1px 16px;
+    color: #65676b;
+    font-size: 15px;
+}
+
+.newsfeed .watch-post .react-part .all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid hsl(198deg 8% 74%);
+}
+
+.newsfeed .watch-post .react-part .all .single-emo:hover,
+.newsfeed .watch-post .react-part .all .emo-number:hover,
+.newsfeed .watch-post .react-part .all .sc-d:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.newsfeed .watch-post .react-part .all .all-emos {
+    display: flex;
+    align-items: center;
+}
+
+.newsfeed .watch-post .react-part .all .single-emo-1 {
+    z-index: 3;
+} 
+
+.newsfeed .watch-post .react-part .all .single-emo-2 {
+    z-index: 2;
+} 
+
+.newsfeed .watch-post .react-part .all .single-emo-3 {
+    z-index: 1;
+} 
+
+.newsfeed .watch-post .react-part .all .single-emo {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    -moz-box-shadow: 1px 0 0 1px #fff;
+    -webkit-box-shadow: 1px 0 0 1px #fff;
+    box-shadow: 1px 0 0 1px #fff;
+}
+
+.newsfeed .watch-post .react-part .all .emo-number {
+    padding-left: 6px;
+}
+
+.newsfeed .watch-post .react-part .all .share-and-cmt {
+    display: flex;
+}
+
+.newsfeed .watch-post .react-part .all .share-and-cmt .sc-d {
+    margin-left: 7px;
+}
+
+.newsfeed .watch-post .react-part .mine {
+    padding: 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsfeed .watch-post .react-part .mine .action {
+    width: 155px;
+    height: 32px;
+    padding: 6px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.newsfeed .watch-post .react-part .mine .action:hover {
+    background-color: #dfe6e9;
+}
+
+.newsfeed .watch-post .react-part .mine .action .icon,
+.newsfeed .watch-post .react-part .mine .action .action-name {
+    padding: 0 4px;
+}
+
+.newsfeed .watch-post .react-part .mine .action .icon {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* het bai  */
+.newsfeed .no-more-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: gray
+}
+
+.free-emotion-icon {
+    width: 16px;
+}
+
+@keyframes like {
+    to {
+        transform: rotate(-30deg) scale(1.6);
+    }
+}

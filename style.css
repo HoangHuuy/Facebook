@@ -238,6 +238,7 @@ header {
 
 .nav ul li a:hover + .nav-title{
     display: block;
+    animation: fadeIn 0.3s 1 linear forwards;
 }
 
 /* search */
@@ -1190,7 +1191,7 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: rgba(182, 176, 176, 0.726);
+    background-color: rgba(206, 210, 212, 0.726);
     padding-left: 2px;
 }
 
@@ -1260,6 +1261,7 @@ header {
     border-radius: 50%;
     width: 56px;
     height: 56px;
+    border: 1px solid rgba(187, 187, 187, 0.521);
 }
 
 .notifications .block ul li a .block-icon .notify-type {
