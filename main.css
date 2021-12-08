@@ -1,5 +1,5 @@
 main {
-    padding-top: 16px;
+    padding-top: 72px;
 }
 
 main .center {
@@ -337,8 +337,17 @@ main .center {
 
 .newsfeed .watch-post .text-part {
     width: 100%;
-    padding: 4px 16px 16px 16px;
+    padding: 4px 16px 11px 16px;
     font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.newsfeed .watch-post .text-part span a{
+    color: hsl(214deg 89% 52%);
+}
+
+.newsfeed .watch-post .text-part span a:hover {
+    text-decoration: underline;
 }
 
 .newsfeed .watch-post .img-part {
@@ -348,6 +357,7 @@ main .center {
     align-items: center;
     border-top: 1px solid rgba(209, 209, 209, 0.685);
     border-bottom: 1px solid rgb(209, 209, 209, 0.685);
+    margin-top: 5px;
 }
 
 .newsfeed .watch-post .img-part img {
