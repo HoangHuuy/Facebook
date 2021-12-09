@@ -128,6 +128,18 @@
     padding-bottom: 5px;
 }
 
-.sidebar-left .sidebar-left-content .tools-list ul li:nth-child(n+8){
+.sidebar-left .sidebar-left-content #tools-list-one ul li:nth-child(n+8){
     display: none;
+}
+
+.sidebar-left .sidebar-left-content #tools-list-two ul li:nth-child(n+7){
+    display: none;
+}
+
+.sidebar-left .sidebar-left-content #tools-list-two .top-list .top-list-content .settings {
+    display: none;
+}
+
+.sidebar-left .sidebar-left-content #tools-list-two:hover .top-list .top-list-content .settings {
+    display: block;
 }
